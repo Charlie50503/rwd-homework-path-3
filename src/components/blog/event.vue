@@ -432,6 +432,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   .event {
+    padding-bottom: 104px;
     &-detail {
       width: 510px;
 
@@ -494,6 +495,32 @@ export default {
           line-height: 24px;
         }
       }
+
+      &-share {
+        margin-bottom: 16px;
+
+        &__text {
+          font-size: 16px;
+        }
+
+        &__icon {
+          width: 20px;
+          height: 20px;
+          margin-left: 16px;
+        }
+      }
+
+      &-footer {
+        &__icon {
+          width: 20px;
+          height: 18px;
+        }
+
+        &__text {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
     }
 
     .tags {
@@ -528,6 +555,9 @@ export default {
 
 @media screen and (max-width: 375px) {
   .event {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 56px;
     &-detail {
       width: 100%;
 
@@ -589,10 +619,70 @@ export default {
           }
         }
       }
+
+      &-share {
+        margin-bottom: 8px;
+
+        &__icon {
+          margin-left: 18px;
+        }
+      }
+
+      &-footer {
+        justify-content: flex-start;
+        flex-direction: column;
+
+        &__prev {
+          margin-bottom: 10.5px;
+        }
+
+        &__next {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }
+        &__icon {
+          width: 16px;
+          height: 14px;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+      }
     }
 
     .tags {
-      display: none;
+      width: 100%;
+      padding-top: 39px;
+      .tag-title {
+        margin-bottom: 10px;
+      }
+
+      .tag-links {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        li {
+          font-size: 16px;
+          padding-right: 8px;
+          width: auto;
+
+          &:nth-child(2n) {
+            margin-left: 0;
+            width: auto;
+          }
+
+          &:nth-last-child(1) {
+            width: auto;
+          }
+
+          &:nth--child(1) {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
