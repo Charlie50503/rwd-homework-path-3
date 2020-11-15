@@ -1,4 +1,5 @@
 module.exports = {
 	// basic path
-	publicPath: './',
+    publicPath: './',
+    outputDir: 'App',
 };

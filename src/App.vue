@@ -36,7 +36,7 @@
                   <router-link to="/Store_Location">門市據點</router-link>
                 </li>
                 <li class="footer-header__link">
-                  <router-link to="/Blog">部落格</router-link>
+                  <router-link to="/Blog/main">部落格</router-link>
                 </li>
                 <li class="footer-header__link">
                   <router-link to="/FAQ">常見問題</router-link>
