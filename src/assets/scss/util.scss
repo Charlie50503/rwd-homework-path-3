@@ -1,0 +1,156 @@
+// @font-face {
+//   font-family: "custom-font";
+//   src: url(~@/assets/fonts/Roboto/Roboto-Black.ttf) format("Black");
+//   src: url(~@/assets/fonts/Roboto/Roboto-BlackItalic.ttf) format("BlackItalic");
+//   src: url(~@/assets/fonts/Roboto/Roboto-Bold.ttf) format("Bold");
+//   src: url(~@/assets/fonts/Roboto/Roboto-BoldItalic.ttf) format("BoldItalic");
+//   src: url(~@/assets/fonts/Roboto/Roboto-Italic.ttf) format("Italic");
+//   src: url(~@/assets/fonts/Roboto/Roboto-Medium.ttf) format("Medium");
+//   src: url(~@/assets/fonts/Roboto/Roboto-MediumItalic.ttf)
+//     format("MediumItalic");
+//   unicode-range: U+4E00-9FFF;
+// }
+
+// @font-face {
+//   font-family: "custom-font";
+//   src: url(~@/assets/fonts/Noto_Sans/NotoSans-Regular.ttf) format("truetype");
+//   //   src: url(~@/assets/fonts/Noto_Sans/NotoSans-Bold.ttf) format("Bold");
+//   //   src: url(~@/assets/fonts/Noto_Sans/NotoSans-BoldItalic.ttf)
+//   //     format("BoldItalic");
+//   //   src: url(~@/assets/fonts/Noto_Sans/NotoSans-Italic.ttf) format("Italic");
+//   //   src: url(~@/assets/fonts/Noto_Sans/NotoSans-Regular.ttf) format("Regular");
+//   unicode-range: U+00-024F;
+// }
+//format 是檔案格式
+//font-family不需要加括號
+// unicode-range 有效範圍
+
+//中文
+@font-face {
+  font-family: custom Black;
+  src: url(~@/assets/fonts/Noto_Sans_TC/NotoSansTC-Black.otf) format("opentype");
+  unicode-range: U+4E00-9FFF;
+}
+//英文
+@font-face {
+  font-family: custom Black;
+  src: url(~@/assets/fonts/Roboto/Roboto-Black.ttf) format("truetype");
+  unicode-range: U+00-024F;
+}
+
+//中文
+@font-face {
+  font-family: custom BoldItalic;
+  src: url(~@/assets/fonts/Noto_Sans_TC/NotoSansTC-Bold.otf) format("opentype");
+  unicode-range: U+4E00-9FFF;
+}
+//英文
+@font-face {
+  font-family: custom BoldItalic;
+  src: url(~@/assets/fonts/Roboto/Roboto-BoldItalic.ttf) format("truetype");
+  unicode-range: U+00-024F;
+}
+
+//中文
+@font-face {
+  font-family: custom Medium;
+  src: url(~@/assets/fonts/Noto_Sans_TC/NotoSansTC-Medium.otf)
+    format("opentype");
+  unicode-range: U+4E00-9FFF;
+}
+//英文
+@font-face {
+  font-family: custom Medium;
+  src: url(~@/assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  unicode-range: U+00-024F;
+}
+//中文
+@font-face {
+  font-family: custom Regular;
+  src: url(~@/assets/fonts/Noto_Sans_TC/NotoSansTC-Regular.otf)
+    format("opentype");
+  unicode-range: U+4E00-9FFF;
+}
+//英文
+@font-face {
+  font-family: custom Regular;
+  src: url(~@/assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  unicode-range: U+00-024F;
+}
+//中文
+@font-face {
+  font-family: custom Bold;
+  src: url(~@/assets/fonts/Noto_Sans_TC/NotoSansTC-Bold.otf) format("opentype");
+  unicode-range: U+4E00-9FFF;
+}
+//英文
+@font-face {
+  font-family: custom Bold;
+  src: url(~@/assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  unicode-range: U+00-024F;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "custom Bold", sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  min-width: 1110px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+// .mb-80 {
+//   margin-bottom: 80px;
+// }
+
+// .mb-36 {
+//   margin-bottom: 36px;
+// }
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    min-width: 690px;
+  }
+
+  .container {
+    width: 690px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrap {
+    min-width: 375px;
+  }
+
+  .container {
+    width: 345px;
+  }
+}
