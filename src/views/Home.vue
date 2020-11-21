@@ -273,7 +273,6 @@ export default {
 <style lang="scss" scoped>
 .banner {
   height: 840px;
-  width: 100%;
   background-image: url(https://images.unsplash.com/photo-1509029032154-54ba8b3216d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
 }
@@ -601,6 +600,7 @@ export default {
   }
 
   &__submit {
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     width: 350px;

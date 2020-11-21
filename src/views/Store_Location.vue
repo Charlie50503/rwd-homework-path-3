@@ -1,7 +1,7 @@
 <template>
   <div class="FAQ">
-    <header class="header header-banner header__container">
-      <div class="container">
+    <header class="header header-banner">
+      <div class="container header__container">
         <h1 class="header__title">
           門市據點
           <img src="@/assets/img/iconfinder_location_1585851.svg" alt="" />
@@ -158,6 +158,7 @@ export default {
   &__container {
     display: flex;
     align-items: flex-end;
+    height: 100%;
   }
 
   &__title {

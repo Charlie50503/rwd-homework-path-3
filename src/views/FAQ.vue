@@ -1,7 +1,7 @@
 <template>
   <div class="FAQ">
-    <header class="header header-banner header__container">
-      <div class="container">
+    <header class="header header-banner ">
+      <div class="container header__container">
         <h1 class="header__title">
           常見問題
           <img src="@/assets/img/help-circle-sharp.svg" alt="" />
@@ -90,6 +90,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ps-re {
+  position: relative;
+}
 .header-banner {
   height: 304px;
   background-image: url(https://images.unsplash.com/photo-1511467094700-849a6a082fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
@@ -100,6 +103,7 @@ export default {
   &__container {
     display: flex;
     align-items: flex-end;
+    height: 100%;
   }
 
   &__title {
