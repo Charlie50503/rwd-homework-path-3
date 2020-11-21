@@ -33,73 +33,77 @@ export default {
 
 <style lang="scss" scoped>
 .blog-navbar {
-  background: #650300;
+   background: #650300;
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 14px;
-  }
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 12px;
+      padding-bottom: 14px;
+   }
 
-  &__search {
-    width: 24px;
-    height: 24px;
-  }
+   &__search {
+      width: 24px;
+      height: 24px;
+   }
 }
 
 .blog-navlinks {
-  display: flex;
-  li {
-    margin-left: 48px;
+   display: flex;
 
-    &:nth-child(1) {
-      margin-left: 0px;
-    }
-  }
-  &__link {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    line-height: 24px;
-  }
+   li {
+      margin-left: 48px;
+
+      &:nth-child(1) {
+         margin-left: 0;
+      }
+   }
+
+   &__link {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 24px;
+   }
 }
 
 @media screen and (max-width: 768px) {
-  .blog-navbar {
-    &__container {
-      padding: 15px 39px;
-    }
-  }
+   .blog-navbar {
+      &__container {
+         padding: 15px 39px;
+      }
+   }
 
-  .blog-navlinks {
-    li {
-      margin-left: 32px;
-    }
-    &__link {
-      font-size: 16px;
-    }
-  }
+   .blog-navlinks {
+      li {
+         margin-left: 32px;
+      }
+
+      &__link {
+         font-size: 16px;
+      }
+   }
 }
 
 @media screen and (max-width: 375px) {
-  .blog-navbar {
-    &__container {
-      padding: 16px 15px;
-    }
+   .blog-navbar {
+      &__container {
+         padding: 16px 15px;
+      }
 
-    &__search {
-      display: none;
-    }
-  }
+      &__search {
+         display: none;
+      }
+   }
 
-  .blog-navlinks {
-    justify-content: space-between;
-    width: 100%;
+   .blog-navlinks {
+      justify-content: space-between;
+      width: 100%;
 
-    li {
-      margin-left: 0px;
-    }
-  }
+      li {
+         margin-left: 0;
+      }
+   }
 }
+
 </style>
